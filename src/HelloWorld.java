@@ -39,7 +39,7 @@ public class HelloWorld {
         System.out.println(decrement);
 
 
-
+        // CASTING is coercing a value of one type into another.
         // Implicit CASTING - less specific data type, to a more specific data type.
 
         byte dayOfMonth = 14;
@@ -47,7 +47,8 @@ public class HelloWorld {
 
         int result = dayOfMonth * birthday;
 
-
+        // String name = "codeup";
+        System.out.printf("Hello there, %s. Nice to see you. \n", name);
 
         // Explicit Casting - more specific data type, to less specific data type.
 //        int x = 900;
@@ -57,9 +58,12 @@ public class HelloWorld {
 //
 //        System.out.println(difference);
 
+        // --> Syntax, data types and variables exercises <--
+
+        // question 1
         int myFavoriteNumber = 2;
         System.out.println(myFavoriteNumber);
-
+        // question 2
         String myString = "Pearl Jam";
         System.out.println(myString);
 
@@ -70,16 +74,19 @@ public class HelloWorld {
         // myString = 3.14159;
 
         // question 5: error message received - variable not initialized
-        // question 6: error due to length of number, could be an int or short
+        // question 6 & 7: error due to length of number, could be an int or short
+        // note: 123L - L denotes a long
         // question 8: due to length of number
         // question 9: change to double or cast float myNumber = (float)(3.14);
-        double myNumber = 3.14;
+        float myNumber = 3.14f;
+        // float myNumber = (float)(3.14);
+        // double myNumber = 3.14;
         System.out.println(myNumber);
 
         // question 10 pre and post increment
-//        int x = 5;
-//        System.out.println(x++);
-//        System.out.println(x);
+        // int x = 5;
+        // System.out.println(x++);
+        // System.out.println(x);
 
         // int x = 5;
         // System.out.println(++x);
@@ -109,8 +116,15 @@ public class HelloWorld {
         int y = 2;
         x /=y;
         y -=x;
+        System.out.println(x);
+        System.out.println(y);
 
         // question 14 : you must use implicit or explicit casting to resolve the issue.
+
+        // code below will cause a complier error
+        // byte  biggerInt = 129;
+
+        System.out.println(Integer.MAX_VALUE);
 
 
 
