@@ -1,21 +1,13 @@
-import java.util.Scanner;
-
 public class ControlFlowExercises {
-    private static Scanner sc = new Scanner(System.in);
+    public static void main (String[] args){
+        System.out.println("hello");
 
-    private static void main (String[] args){
+        int i = 5;
 
-    int i = 5;
-
-    while (i <= 15){
-        System.out.println(i);
-        i++;
-    }
-
-
-
-
-
+        while (i <= 15){
+            System.out.print(i);
+            i++;
+        }
 
 
 
