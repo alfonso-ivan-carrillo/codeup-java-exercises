@@ -65,13 +65,36 @@ public class ConsoleExercises {
 
         
 
-//        System.out.println("Perimeter: " + ((Integer.parseInt(shortSide) * 2) + (Integer.parseInt(longSide) * 2)));
-//        System.out.println("Area: " +  Integer.parseInt(shortSide) * Integer.parseInt(longSide));
-//        System.out.println("Volume: " + (Integer.parseInt(shortSide) * Integer.parseInt(longSide) * Integer.parseInt(height)));
+        System.out.println("Perimeter: " + ((Integer.parseInt(shortSide) * 2) + (Integer.parseInt(longSide) * 2)));
+        System.out.println("Area: " +  Integer.parseInt(shortSide) * Integer.parseInt(longSide));
+        System.out.println("Volume: " + (Integer.parseInt(shortSide) * Integer.parseInt(longSide) * Integer.parseInt(height)));
 
 
 
-
+//        Scanner in = new Scanner(System.in);
+//        int integer;
+//        long longInteger;
+//        float realNumber;
+//        double doubleReal;
+//        String string1;
+//        String string2;
+//
+//        System.out.println("Enter an integer, a long integer, " + "a floatin-point" );
+//        System.out.println("number, another floating-point number, " + "and a string.");
+//        System.out.println("Separate each with a blank or return.");
+//
+//        integer = in.nextInt();
+//        longInteger = in.nextLong();
+//        realNumber = in.nextFloat();
+//        doubleReal = in.nextDouble();
+//        string1 = in.nextLine();
+//        System.out.println("Now enter another value.");
+//        string2 = in.next();
+//
+//        System.out.println("Here is what you entered: ");
+//        System.out.println(integer + " " + longInteger + " " + realNumber +
+//                " " + doubleReal + " " + string1 +
+//                " and " + string2);
 
 
 
