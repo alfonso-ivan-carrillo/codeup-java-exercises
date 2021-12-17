@@ -88,6 +88,29 @@ public class ControlFlowExercises {
             System.out.println();
         }
 
+        String gradeChoice = "y";
+
+        while(gradeChoice.equalsIgnoreCase("y")){
+            System.out.println("What is your number grade?");
+            int gradeInput = scn.nextInt();
+            if( gradeInput >= 88 && gradeInput <= 100){
+                System.out.println("You received an A.");
+            } else if( gradeInput >= 80 && gradeInput <= 87){
+                System.out.println("You received a B. ");
+            } else if ( gradeInput >= 67 && gradeInput <= 79){
+                System.out.println("You received a C.");
+            }  else if ( gradeInput >= 60 && gradeInput <= 66){
+                System.out.println("You received a D.");
+            } else if ( gradeInput >= 0 && gradeInput <= 59){
+                System.out.println("You received an F.");
+            } else {
+                System.out.println("That is out of range.");
+            }
+            System.out.print("Continue? (y/n): ");
+            gradeChoice = scn.next();
+            System.out.println();
+        }
+
 
 
 
