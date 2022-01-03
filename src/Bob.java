@@ -13,7 +13,7 @@ public class Bob {
                 System.out.println("Bob: Sure.");
             } else if (userInput.endsWith("!")){
                 System.out.println("Bob: Whoa, chill out!");
-            } else if (userInput.equals(" ")){
+            } else if (userInput.equals(" ")){ // could also have used userInput.isEmpty();
                 System.out.println("Bob: Fine. Be that way!");
             } else {
                 System.out.println("Whatever.");
