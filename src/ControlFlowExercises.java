@@ -7,21 +7,22 @@ public class ControlFlowExercises {
 //        int i = 5;
 //
 //        while (i <= 15){
-//            System.out.print(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 //
 //        for (int i = 5; i <= 15; i++){
-//            System.out.print(i);
+//            System.out.print(i + " ");
 //        }
 //        System.out.printf("%n");;
 
-        // count by 2
+       //  count by 2
 //        int x = 0;
 //
 //        do {
 //            x += 2;
 //            System.out.println(x);
+//             x +=2;
 //        } while( x < 100);
 
         // count by 5
@@ -32,12 +33,13 @@ public class ControlFlowExercises {
 //        } while (x > -10);
 
         // squared
-
+//
 //        long x = 2;
-
+//
 //        do {
 //            System.out.println(x);
 //            x = x * x;
+//             // x = (int) Math.pow(x, 2);
 //        } while (x < 100000);
 //
 //        for (long y = 2; y <= 100; y +=2){
@@ -52,14 +54,15 @@ public class ControlFlowExercises {
 //            System.out.println(y);
 //        }
 //
-//        for (int x = 0; x <= 100; x++){
-//            if (x % 3 == 0){
+//        for (int x = 1; x <= 100; x++){
+//            // the most narrow of cases needs to be first, so fizzbuzz condition needs to be first
+//            if ( x % 3 == 0 && x % 5 == 0){
+//                System.out.println("FizzBuzz");
+//            } else if (x % 3 == 0){
 //                System.out.println("Fizz");
 //            } else if (x % 5 == 0){
 //                System.out.println("Buzz");
-//            } else if ( x % 3 == 0 && x % 5 == 0){
-//                System.out.println("FizzBuzz");
-//            } else {
+//            }  else {
 //                System.out.println(x);
 //            }
 //        }
