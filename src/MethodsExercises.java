@@ -33,11 +33,12 @@ public class MethodsExercises {
     // Bonus for Question 1
     public static int multiMethod(int num1, int num2){
         int counter = 1;
+        int num3 = 0;
         while (counter <= num2){
-            num1 += num1;
+            num3 = (num3 + num1);
             counter++;
         }
-        return num1;
+        return num3;
     }
 
     public static void main(String[] args){
@@ -49,7 +50,7 @@ public class MethodsExercises {
 ////        System.out.println(divisionMethod(10, 0));
 //        System.out.println(modulusMethod(10, 2));
 //        System.out.println(modulusMethod(10, 3));
-        System.out.println(multiMethod(2, 4));
+        System.out.println(multiMethod(3, 3));
 
     }
 
