@@ -11,6 +11,11 @@ public class MethodsExercises {
     // subtraction method
     public static int subtractionMethod(int num1, int num2){
         return num1 - num2;
+        //instructor solution
+        // if (num1 < num2){
+        //  return num2 - num1;}
+        // else {
+        // return num1 - num2;
     }
 
     // multiplication method
@@ -60,6 +65,18 @@ public class MethodsExercises {
         }
     }
 
+    // public static int getInteger(int min, int max){
+    //      Scanner sc = new Scanner(System.in).useDelimiter("\n");
+    //      System.out.println("please enter a number betwen 1 and 10");
+    //      int userNum = sc.nextInt();
+    //      if(userNum > max || userNum < min){
+    //          return getInteger(min, max);
+    //          }
+    //      return userNum;
+    //      }
+    // under main method, call getInteger(1, 10);
+
+
     // Question 3
     public static long factorial(long num){
             long fac = 1;
@@ -78,7 +95,7 @@ public class MethodsExercises {
             }
     }
 
-    // Question 4
+    // Start of Question 4
     public static int dice(int sides){
         int dice1 = (int) (1 + (Math.random() * sides));
         int dice2 = (int) (1 + (Math.random() * sides));
@@ -105,6 +122,9 @@ public class MethodsExercises {
             rollTheDice = scn.next();
         }
     }
+    // End of Question 4
+
+
 
 
     public static void main(String[] args){
@@ -116,7 +136,7 @@ public class MethodsExercises {
 ////        System.out.println(divisionMethod(10, 0));
 //        System.out.println(modulusMethod(10, 2));
 //        System.out.println(modulusMethod(10, 3));
-//        System.out.println(multiMethod(3, 3));
+        System.out.println(multiMethod(3, 5));
 
         // for question 1
 //        System.out.println("Enter a number between 1 and 20:");
@@ -137,7 +157,7 @@ public class MethodsExercises {
 //            continueFactorial = scn.next();
 //        }
 
-        rollDice();
+//        rollDice();
 
 
     }
