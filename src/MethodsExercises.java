@@ -51,23 +51,25 @@ public class MethodsExercises {
 
     // Question 2
     public static int getInteger(int min, int max){
-        if (min >= 0 && min <= 20 && max >= 0 && max <= 20){
-            System.out.println("Your range is: " + (max - min));
-            return min - max;
-        } else {
+        System.out.format("Enter a number between %d and %d: \n", min, max);
+        Scanner scn = new Scanner(System.in);
+        int userInput1 = scn.nextInt();
+        if (userInput1 <= min || userInput1 >= max){
             System.out.println("Numbers not in range.");
-            System.out.println("Enter a number between 1 and 20:");
-            Scanner scn = new Scanner(System.in);
-            int userInput1 = scn.nextInt();
-            System.out.println("Enter a second number between 1 and 20:");
-            int userInput2 = scn.nextInt();
-            return getInteger(userInput1, userInput2);
+//            System.out.format("The %d is within range.", userInput1);
+            return getInteger(min, max);
+        } else {
+            System.out.format("The %d is within range.", userInput1);;
+//            userInput1 = scn.nextInt();
+//            getInteger(min, max);
+//            System.out.format("The %d is within range.", userInput1);
+            return userInput1;
         }
     }
 
     // public static int getInteger(int min, int max){
     //      Scanner sc = new Scanner(System.in).useDelimiter("\n");
-    //      System.out.println("please enter a number betwen 1 and 10");
+    //      System.out.println("please enter a number between 1 and 10");
     //      int userNum = sc.nextInt();
     //      if(userNum > max || userNum < min){
     //          return getInteger(min, max);
@@ -138,13 +140,9 @@ public class MethodsExercises {
 //        System.out.println(modulusMethod(10, 3));
         System.out.println(multiMethod(3, 5));
 
-        // for question 1
-//        System.out.println("Enter a number between 1 and 20:");
-//        Scanner scn = new Scanner(System.in);
-//        int userInput1 = scn.nextInt();
-//        System.out.println("Enter a second number between 1 and 20:");
-//        int userInput2 = scn.nextInt();
-//        getInteger(userInput1, userInput2);
+        // for question 2
+
+        getInteger(1, 10);
 
         // for question 3
 //        String continueFactorial = "yes";
