@@ -6,6 +6,9 @@ public class Circle {
     public double area;
     public double circumference;
 
+    // FINAL keyword
+    // is the same as a const in javascript, a final variable cannot be reassigned
+
     public Circle(double radius, double area, double circumference) {
         this.radius = radius;
         this.area = area;
