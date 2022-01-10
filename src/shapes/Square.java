@@ -1,43 +1,52 @@
 package shapes;
 
-public class Square extends Rectangle{
-    public int side;
+public class Square extends Quadrilateral{
+//    private double side;
 
-    public Square(int length, int width){
-        super(length, width);
-        this.length = side;
-        this.width = side;
-    }
-
-
-    public Square(int side){
-        this.side = side;
-        this.length = side;
-        this.width = side;
-    }
-
-    public static int getPerimeter(int side){
-        System.out.println((4 * side));
-        return (4 * side);
-    }
-    public static int getArea(int side){
-        System.out.println((int) (Math.pow(side, 2)));
-        return (int) (Math.pow(side, 2));
-    }
- /*     instructor solutions
-
-      public Square(double side){
+    public Square(double side){
         super(side, side);
-      }
+    }
 
-        public double getArea(){
-           return Math.pow(super.length, 2);
-        }
-
-        public double getPerimeter(){
-            return (2 * this.length) + (2 * this.width);
-        }
+    /* instructor solution
+    * public Square(double side){
+    *   this.side = side;
+    *   this.length = side;
+    *   this.width = side;
+    *
+    *
+    *
     * */
+
+    public void setLength(double length){
+       this.setLength(length);
+    }
+    public void setWidth(double width){
+      this.setLength(length);
+    }
+
+
+    public double getPerimeter(){
+        return 4 * length;  // had it as this.length
+    }
+    public double getArea(){
+        return Math.pow(length, 2);  // had it as this.length
+    }
+ //   instructor solutions
+
+//      public Square(double side){
+//        super(side, side);
+//      }
+//
+//        public double getArea(){
+//           System.out.println("This is a square.");
+//           return Math.pow(super.length, 2);
+//        }
+//
+//        public double getPerimeter(){
+//            return (2 * super.length) + (2 * super.width);  // could use return 4 * super.length -> in a square lenght and width would be the same
+//        }
+
+
 
 
 

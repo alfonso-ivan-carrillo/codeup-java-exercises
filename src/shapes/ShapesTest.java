@@ -2,25 +2,22 @@ package shapes;
 
 public class ShapesTest {
     public static void main(String[] args) {
-        Rectangle  box1 = new Rectangle(4,5);
-        System.out.println(Rectangle.getPerimeter(box1.length, box1.width));
-        System.out.println(Rectangle.getArea(box1.length, box1.width));
+//        Rectangle  box1 = new Rectangle(4,5);
+//        System.out.println(box1.getPerimeter());
+//        System.out.println(box1.getArea());
+//
+//        Rectangle box2 = new Square(5);
+//        System.out.println(box2.getPerimeter());
+//        System.out.println(box2.getArea());
 
-        Rectangle box2 = new Square(5);
-        System.out.println(((Square) box2).side);
-        Square.getArea(((Square) box2).side);
-        Square.getPerimeter(((Square) box2).side);
-
-
-        Square box3 = new Square(6);
-        Square.getPerimeter(box3.side);
-
-    /* instructor solution
-    *
-    *
-    *
-    *
-    * */
+//        Measurable myShape = new Rectangle(5, 6);
+        Measurable myShape = new Square(5);
+//        Rectangle box1 = new Rectangle(5, 6);
+////        myShape = box1;
+//        Square box2 = new Square(5);
+//        myShape = box2;
+        System.out.println(myShape.getPerimeter());
+        System.out.println(myShape.getArea());
 
 
     }
