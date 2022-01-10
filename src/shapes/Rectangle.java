@@ -38,4 +38,11 @@ public class Rectangle {
     public static int getPerimeter(int length, int width){
         return ((2 * length) + (2 * width));
     }
+
+    /*  instructor solution
+
+    *   public class Rectangle
+    * */
+
+
 }

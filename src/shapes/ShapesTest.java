@@ -12,6 +12,15 @@ public class ShapesTest {
         Square.getPerimeter(((Square) box2).side);
 
 
+        Square box3 = new Square(6);
+        Square.getPerimeter(box3.side);
+
+    /* instructor solution
+    *
+    *
+    *
+    *
+    * */
 
 
     }
