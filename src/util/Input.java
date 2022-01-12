@@ -20,6 +20,7 @@ public class Input {
     }
 
     public boolean yesNo(){
+        System.out.println("Would you lke to continue?");
         String answer = scanner.nextLine();
         if ( answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")){
             return true;
