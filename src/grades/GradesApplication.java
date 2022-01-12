@@ -64,10 +64,10 @@ public class GradesApplication {
                     break;
                 }
             }
-            System.out.println("Would you like to see another student?");
+            System.out.println("Would you like to see another student? (yes/no)");
             confirm = sn.nextLine();
         }
-
+        System.out.println("Good-bye, and have a wonderful day!");
 
     }
 
