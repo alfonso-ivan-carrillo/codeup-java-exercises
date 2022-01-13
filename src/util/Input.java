@@ -36,7 +36,7 @@ public class Input {
             System.out.println("Numbers not in range.");
             return getInt(min, max);
         } else {
-            System.out.format("The %d is within range.", userInput1);;
+            System.out.format("You entered %d .", userInput1);;
             return userInput1;
         }
     }

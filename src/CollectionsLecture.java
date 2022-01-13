@@ -81,10 +81,12 @@ public class CollectionsLecture {
         System.out.println(people);
 
     // .get(key) - returns the value for the specified key.
-
         System.out.println(people.get("Logan"));
 
-    //  .getOrDefault(key, value) - like get, but with a defined value instead of null.
+    // .keySet() - returns the keys of the pairs
+        System.out.println(people.keySet());
+
+        //  .getOrDefault(key, value) - like get, but with a defined value instead of null.
         System.out.println(people.getOrDefault("Adam", p1));
 
     // .containsKey(key) - returns a boolean whether or not the Key exists in the Map.
