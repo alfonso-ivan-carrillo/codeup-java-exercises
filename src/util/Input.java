@@ -42,9 +42,19 @@ public class Input {
     }
 
     public int getInt(){
-        System.out.println("Enter a number.");
-        int num = scanner.nextInt();
-        return num;
+//        System.out.println("Enter a number.");
+//        int num = scanner.nextInt();
+            String userInput1 = getString();
+            Integer obj = 8;
+            System.out.println(userInput1.getClass());
+         try {
+             System.out.println(obj.valueOf(userInput1).getClass());
+//            return obj.valueOf(userInput1);
+        } catch (NumberFormatException e){
+            System.out.println("Formatting error. Enter a intger.");
+//            e.printStackTrace();
+        }
+        return obj.valueOf(userInput1);
     }
 
     public double getDouble(double min, double max){
@@ -60,13 +70,52 @@ public class Input {
     }
 
     public double getDouble(){
-        System.out.println("Enter a double.");
-        double num = scanner.nextDouble();
-        return num;
+//        System.out.println("Enter a double.");
+//        double num = scanner.nextDouble();
+        String userInput1 = getString();
+        Double obj = 8.0;
+        System.out.println(userInput1.getClass());
+        try {
+            System.out.println(obj.valueOf(userInput1).getClass());
+        } catch (NumberFormatException e){
+            System.out.println("Formatting error. Enter a double. ");
+//            e.printStackTrace();
+        }
+        return obj.valueOf(userInput1);
+    }
+
+    public int getBinary(){
+        String userInput1 = getString();
+        Integer obj = 1;
+//        System.out.println(userInput1.getClass());
+//        System.out.println(obj.valueOf(userInput1, 2));
+        try {
+            System.out.printf("You entered a binary number of: %s\n Your number is %d \n", userInput1, obj.valueOf(userInput1, 2));
+        } catch (NumberFormatException e){
+            System.out.println("Formatting Error. Enter an integer string.");
+        }
+
+         return obj.valueOf(userInput1, 2);
+    }
+
+    public int getHex(){
+        String userInput1 = getString();
+        Integer obj = 1;
+//        System.out.println(userInput1.getClass());
+//        System.out.println(obj.valueOf(userInput1, 2));
+        try {
+            System.out.printf("You entered a hexidecimal number of: %s\n Your number is %d \n", userInput1, obj.valueOf(userInput1, 16));
+        } catch (NumberFormatException e){
+            System.out.println("Formatting Error. Enter an integer string");
+        }
+        return obj.valueOf(userInput1, 16);
     }
 
 
+
     public static void main(String[] args){
+
+
 
 
     }

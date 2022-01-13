@@ -57,19 +57,17 @@ public class ExceptionsErrorHandlingLec {
 
         //  throw exception on method - needs to be handled, you can't just call it like getBestRocketsPlayer()
         //  needs to be placed in a try-catch block - it has to be handled or an exception will be thrown for handling
-        try{
-            getBestRocketsPlayer();
-        } catch (Exception e) {
-            e.printStackTrace();
-            main(args);   // this re-runs the main method
-        }
+//        try{
+//            getBestRocketsPlayer();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            main(args);   // this re-runs the main method
+//        }
+        Input in = new Input();
 
-
-
-
-
-
-
+//        System.out.println(in.getInt());
+//        System.out.println(in.getDouble());
+        System.out.println(in.getHex());
 
     }
 }
