@@ -2,6 +2,7 @@ package util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class GroceryTester {
 
@@ -51,9 +52,12 @@ public class GroceryTester {
         list.put("Beverages", new ArrayList<>());
         list.put("Meat", new ArrayList<>());
 
+//    runApp(list, new Input());
+        for (Map.Entry<String, ArrayList<GroceryList>> pair : list.entrySet()){
+            System.out.println(pair);
+        }
 
-
-
+        System.out.println(list.entrySet());
 
 //        System.out.println(category.keySet());
 //        System.out.println(category.entrySet());
