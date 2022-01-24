@@ -8,4 +8,5 @@ abstract public class Vehicle {
     // in an abstract method does not have a body
     public abstract void go();
 
+
 }
